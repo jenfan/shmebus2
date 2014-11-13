@@ -1,0 +1,23 @@
+<ion-view view-title="Rebus">
+	<ion-content class="padding">
+	  <h2>{{rebus.name}}</h2>
+	  <p>{{rebus.description}}</p>
+	  <p>otvet:{{rebus.otvet}}</p>
+	  
+	  <img ng-src="{{rebus.url}}">
+
+		<form name="reviewForm" ng-submit="proverka(otvet);">
+		<!-- <input type="submit" value="Submit" /> -->
+		<div class="item item-input-inset">
+		    <label class="item-input-wrapper">
+		      <input ng-model="otvet" type="text" placeholder="otvet">
+		    </label>
+		    <button class="button button-small">
+		      <i class="icon ion-checkmark-round"></i>
+		    </button>
+		</div>
+		<p>{{otvet}}</p>
+	</form> 
+	</ion-content>
+</ion-view>
+

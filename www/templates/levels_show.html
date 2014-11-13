@@ -1,0 +1,13 @@
+<ion-view view-title="{{level.title}}">
+        <ion-content>
+		  <div class="div_rebuses">
+		  	
+			    <div class="rebus" ng-repeat="rebus in rebuses" >
+			      <img ui-sref="rebus({rebusId:rebus.id})" ng-src="{{rebus.thumb}}"/>
+			    </div>
+
+		  </div>
+        </ion-content>
+      </ion-view>
+            <!-- <a class="button icon icon-right ion-chevron-right" ui-sref="rebus">rebus</a>
+            <a class="button icon icon-right ion-chevron-right" ui-sref="index">index</a> -->
